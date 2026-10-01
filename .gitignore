@@ -1,6 +1,16 @@
+# Firebase cache and logs
+.firebase/
+firebase-debug.log*
+firestore-debug.log*
+ui-debug.log*
+*hosting*.cache
+
 # Environment and temporary files
 .playwright-mcp/
 *.pyc
 __pycache__/
 .vscode/
 .idea/
+convert_blog.py
+convert.py
+process_services.py
