@@ -57,4 +57,21 @@ document.addEventListener('DOMContentLoaded', () => {
   if (currentYearSpan) {
     currentYearSpan.textContent = new Date().getFullYear();
   }
+
+  // FAQ Accordion Interactivity
+  const faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(item => {
+    const questionBtn = item.querySelector('.faq-question');
+    if (questionBtn) {
+      questionBtn.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        // Close other items
+        faqItems.forEach(other => other.classList.remove('active'));
+        // Toggle current
+        if (!isActive) {
+          item.classList.add('active');
+        }
+      });
+    }
+  });
 });
