@@ -1,0 +1,6 @@
+# Environment and temporary files
+.playwright-mcp/
+*.pyc
+__pycache__/
+.vscode/
+.idea/
