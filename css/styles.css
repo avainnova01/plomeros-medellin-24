@@ -79,7 +79,8 @@ img {
   align-items: center;
 }
 
-.top-notice-left, .top-notice-right {
+.top-notice-left,
+.top-notice-right {
   display: flex;
   align-items: center;
   gap: 16px;
@@ -106,9 +107,20 @@ img {
 }
 
 @keyframes pulse {
-  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
-  70% { transform: scale(1.1); box-shadow: 0 0 0 8px rgba(34, 197, 94, 0); }
-  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+  }
+
+  70% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 8px rgba(34, 197, 94, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+  }
 }
 
 .social-top-links {
@@ -153,10 +165,8 @@ img {
 
 .logo-img {
   width: 50px;
-  height: 50px;
-  border-radius: 12px;
+  height: 100%;
   object-fit: cover;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .logo-text-wrap {
@@ -1088,8 +1098,15 @@ img {
 }
 
 @keyframes floatPulse {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-7px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-7px);
+  }
 }
 
 /* ==================== BLOG & GUIAS DE PLOMERIA ==================== */
@@ -1466,6 +1483,7 @@ img {
     grid-template-columns: 1fr;
     padding: 20px;
   }
+
   .zones-map-frame {
     height: 240px;
   }
@@ -1477,19 +1495,24 @@ img {
     grid-template-columns: 1fr;
     gap: 40px;
   }
+
   .hero-image-wrap {
     max-width: 550px;
     margin: 0 auto;
   }
+
   .banner-grid {
     grid-template-columns: 1fr;
   }
+
   .company-detailed-grid {
     grid-template-columns: 1fr;
   }
+
   .steps-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .footer-top-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1499,9 +1522,11 @@ img {
   .top-notice-bar {
     display: none;
   }
+
   .mobile-toggle {
     display: block;
   }
+
   .nav-links {
     display: none;
     position: absolute;
@@ -1515,48 +1540,60 @@ img {
     border-bottom: 1px solid var(--border-color);
     gap: 18px;
   }
+
   .nav-links.active {
     display: flex;
   }
+
   .nav-actions .btn-header-call {
     display: none;
   }
+
   .hero-title {
     font-size: 2.3rem;
   }
+
   .services-grid {
     grid-template-columns: 1fr;
   }
+
   .gallery-strip-grid {
     grid-template-columns: 1fr;
   }
+
   .testimonials-grid {
     grid-template-columns: 1fr;
   }
+
   .blog-grid {
     grid-template-columns: 1fr;
   }
+
   .company-highlights-list {
     grid-template-columns: 1fr;
   }
+
   .footer-top-grid {
     grid-template-columns: 1fr;
   }
+
   .footer-bottom {
     flex-direction: column;
     gap: 12px;
     text-align: center;
   }
+
   .cta-strip-inner {
     text-align: center;
     justify-content: center;
   }
+
   .floating-whatsapp-btn span {
     display: none;
   }
+
   .floating-whatsapp-btn {
     padding: 15px;
     border-radius: 50%;
   }
 }
-
