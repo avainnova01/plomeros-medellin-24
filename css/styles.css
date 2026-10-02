@@ -37,12 +37,13 @@ html {
   scroll-behavior: smooth;
   font-family: 'Outfit', sans-serif;
   color: var(--text-main);
-  background-color: #ffffff;
+  background-color: var(--primary-dark);
 }
 
 body {
   line-height: 1.6;
   overflow-x: hidden;
+  background-color: #ffffff;
 }
 
 a {
