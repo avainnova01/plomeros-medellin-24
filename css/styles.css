@@ -167,6 +167,15 @@ img {
   width: 50px;
   height: 100%;
   object-fit: cover;
+  animation: logoPeriodicWiggle 7s infinite;
+}
+
+@keyframes logoPeriodicWiggle {
+  0%, 85%, 100% { transform: rotate(0deg) scale(1); }
+  88% { transform: rotate(-5deg) scale(1.1); }
+  91% { transform: rotate(5deg) scale(1.1); }
+  94% { transform: rotate(-3deg) scale(1.05); }
+  97% { transform: rotate(0deg) scale(1); }
 }
 
 .logo-text-wrap {
