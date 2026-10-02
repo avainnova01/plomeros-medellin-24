@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://plomeros24-e5106.web.app/sitemap.xml
